@@ -1,8 +1,13 @@
-Tutorial
-https://docs.openzeppelin.com/learn/
+# Tutorial upgrade smart contract (truffle)
 
-Website for create api key for verify smart contract
-https://bscscan.com
+example code for deploy an upgrade smart contract on binance smart chain (testnet)
+
+
+![overview](https://github.com/zier/tutorial-upgrade-smart-contract/blob/7270c7523a2e2b686e8bb8159471622825660d0b/resources/overview.jpg?raw=true)
+
+#### Resource
+- https://docs.openzeppelin.com/learn/
+- https://bscscan.com
 
 
 ### Step 0
@@ -36,4 +41,10 @@ upgrade smart contract version (HelloWorld to HelloWorldV2)
 and run 
 ```
     truffle migrate --network testnet
+```
+
+### Step 5
+verify contract
+```
+    truffle run verify HelloWorldV2 --network testnet
 ```
